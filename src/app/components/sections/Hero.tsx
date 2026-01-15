@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Button } from '../ui/button';
-import heroImage from 'figma:asset/89fe0be82d091d7f0bf1a2d2ff4772e4af7b6c24.png';
+import heroImage from '../../../assets/hero-glamping.svg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -44,7 +44,8 @@ export const Hero = ({ onOpenBooking }: HeroProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl mb-6 tracking-wide leading-tight"
+          className="font-serif text-4xl md:text-6xl lg:text-8xl mb-6 tracking-wide leading-tight drop-shadow-2xl"
+          style={{ fontFamily: 'var(--font-serif)' }}
         >
           {t.hero.title}
         </motion.h1>
@@ -70,7 +71,8 @@ export const Hero = ({ onOpenBooking }: HeroProps) => {
           >
             <Button 
               onClick={onOpenBooking}
-              className="bg-[#C5A059] hover:bg-[#b08d48] text-white px-8 py-6 rounded-none text-sm tracking-[0.2em] uppercase w-full sm:w-auto"
+              className="bg-gradient-to-r from-[#D4AF37] to-[#C5A059] hover:from-[#E8C968] hover:to-[#D4AF37] text-white px-8 py-6 rounded-none text-sm tracking-[0.2em] uppercase w-full sm:w-auto shadow-gold transition-all duration-500"
+              style={{ fontFamily: 'var(--font-sans)' }}
             >
               {t.hero.ctaPrimary}
             </Button>

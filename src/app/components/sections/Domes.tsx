@@ -9,10 +9,14 @@ interface DomesProps {
   onOpenBooking: (domeName?: string) => void;
 }
 
+import domeExterior from '../../../assets/dome-exterior.svg';
+import domeInterior from '../../../assets/dome-interior.svg';
+import spaForest from '../../../assets/spa-forest.svg';
+
 const domeImages = [
-  "https://images.unsplash.com/photo-1751834296374-ece431ad6618?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFtcGluZyUyMGRvbWUlMjBleHRlcmlvciUyMHN1bm55JTIwZGF5JTIwb2xpdmUlMjB0cmVlc3xlbnwxfHx8fDE3Njg0MTE0Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-  "https://images.unsplash.com/photo-1762255121620-3ca4c551404c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFtcGluZyUyMGRvbWUlMjBpbnRlcmlvciUyMGx1eHVyeSUyMGJlZHJvb218ZW58MXx8fHwxNzY4NDExNDM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-  "https://images.unsplash.com/photo-1656443876192-22c578744a04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFtcGluZyUyMGRvbWUlMjBkZWNrJTIwaG90JTIwdHViJTIwdmlld3xlbnwxfHx8fDE3Njg0MTE0Mzl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+  domeExterior,
+  domeInterior,
+  spaForest
 ];
 
 const DomeCard = ({ dome, index, onOpenBooking }: { dome: any, index: number, onOpenBooking: any }) => {

@@ -174,7 +174,7 @@ export const content = {
       cta: "I want priority access",
     },
     experiences: {
-      title: "EXPERIENCIAS",
+      title: "EXPERIENCES",
       cta: "View experiences",
       items: [
         { name: "Bonfires", label: "Fire Nights" },

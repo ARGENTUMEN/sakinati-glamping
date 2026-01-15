@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { motion } from 'motion/react';
 import { Button } from '../ui/button';
+import spaForest from '../../../assets/spa-forest.svg';
 
 interface SpaProps {
   onOpenBooking: () => void;
@@ -14,7 +15,7 @@ export const Spa = ({ onOpenBooking }: SpaProps) => {
     <section id="spa" className="relative h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1733985969048-69fec664db69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBvdXRkb29yJTIwc3BhJTIwZm9yZXN0JTIwaG90JTIwdHVifGVufDF8fHx8MTc2ODQxMTI4MXww&ixlib=rb-4.1.0&q=80&w=1080" 
+          src={spaForest} 
           alt="Spa in the forest" 
           className="w-full h-full object-cover brightness-[0.7]"
         />

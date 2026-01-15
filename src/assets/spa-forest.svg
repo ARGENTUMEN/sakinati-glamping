@@ -1,0 +1,88 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5F9EA0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="steamGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#E5E5E5;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Forest background -->
+  <rect width="800" height="600" fill="#3F5022"/>
+  
+  <!-- Distant trees -->
+  <ellipse cx="100" cy="200" rx="60" ry="120" fill="#2C3E1A" opacity="0.6"/>
+  <ellipse cx="250" cy="180" rx="70" ry="140" fill="#2C3E1A" opacity="0.6"/>
+  <ellipse cx="550" cy="190" rx="65" ry="130" fill="#2C3E1A" opacity="0.6"/>
+  <ellipse cx="700" cy="210" rx="60" ry="120" fill="#2C3E1A" opacity="0.6"/>
+  
+  <!-- Mid-ground foliage -->
+  <ellipse cx="150" cy="350" rx="90" ry="150" fill="#556B2F" opacity="0.7"/>
+  <ellipse cx="650" cy="330" rx="100" ry="160" fill="#556B2F" opacity="0.7"/>
+  
+  <!-- Wooden spa deck -->
+  <ellipse cx="400" cy="500" rx="300" ry="80" fill="#A67B5B"/>
+  <rect x="100" y="450" width="600" height="150" fill="#8B5A3C" opacity="0.8"/>
+  
+  <!-- Deck planks -->
+  <line x1="100" y1="470" x2="700" y2="470" stroke="#6B4423" stroke-width="2"/>
+  <line x1="100" y1="490" x2="700" y2="490" stroke="#6B4423" stroke-width="2"/>
+  <line x1="100" y1="510" x2="700" y2="510" stroke="#6B4423" stroke-width="2"/>
+  <line x1="100" y1="530" x2="700" y2="530" stroke="#6B4423" stroke-width="2"/>
+  <line x1="100" y1="550" x2="700" y2="550" stroke="#6B4423" stroke-width="2"/>
+  <line x1="100" y1="570" x2="700" y2="570" stroke="#6B4423" stroke-width="2"/>
+  
+  <!-- Hot tub / jacuzzi -->
+  <g transform="translate(400, 420)">
+    <!-- Tub outer rim -->
+    <ellipse cx="0" cy="0" rx="150" ry="80" fill="#8B5A3C"/>
+    <ellipse cx="0" cy="-10" rx="145" ry="75" fill="#6B4423"/>
+    <!-- Water -->
+    <ellipse cx="0" cy="-10" rx="130" ry="65" fill="url(#waterGrad)"/>
+    <!-- Water ripples -->
+    <ellipse cx="0" cy="-10" rx="110" ry="50" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.3"/>
+    <ellipse cx="0" cy="-10" rx="90" ry="40" fill="none" stroke="#87CEEB" stroke-width="1.5" opacity="0.2"/>
+    <!-- Bubbles -->
+    <circle cx="-40" cy="-15" r="5" fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="30" cy="-20" r="4" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="-10" cy="-25" r="6" fill="#FFFFFF" opacity="0.3"/>
+    <circle cx="50" cy="-10" r="4" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+  
+  <!-- Steam effect -->
+  <ellipse cx="400" cy="350" rx="120" ry="80" fill="url(#steamGrad)"/>
+  <ellipse cx="350" cy="330" rx="80" ry="60" fill="url(#steamGrad)"/>
+  <ellipse cx="450" cy="340" rx="90" ry="70" fill="url(#steamGrad)"/>
+  
+  <!-- Candles on deck -->
+  <g transform="translate(180, 480)">
+    <rect x="-5" y="0" width="10" height="30" rx="2" fill="#E8DCC4"/>
+    <ellipse cx="0" cy="0" rx="6" ry="3" fill="#FFE484"/>
+  </g>
+  <g transform="translate(620, 490)">
+    <rect x="-5" y="0" width="10" height="30" rx="2" fill="#E8DCC4"/>
+    <ellipse cx="0" cy="0" rx="6" ry="3" fill="#FFE484"/>
+  </g>
+  
+  <!-- Rolled towels -->
+  <g transform="translate(150, 520)">
+    <rect x="0" y="0" width="40" height="15" rx="3" fill="#F5F0E3"/>
+    <rect x="0" y="17" width="40" height="15" rx="3" fill="#F5F0E3"/>
+  </g>
+  
+  <!-- Plants and nature touches -->
+  <ellipse cx="120" cy="460" rx="20" ry="35" fill="#6B7A3E"/>
+  <ellipse cx="680" cy="470" rx="22" ry="38" fill="#6B7A3E"/>
+  
+  <!-- Stones around tub -->
+  <ellipse cx="250" cy="440" rx="15" ry="10" fill="#696969"/>
+  <ellipse cx="550" cy="445" rx="18" ry="12" fill="#696969"/>
+  <ellipse cx="400" cy="500" rx="12" ry="8" fill="#696969"/>
+  
+  <!-- Ambient lighting glow -->
+  <circle cx="180" cy="480" r="30" fill="#FFB347" opacity="0.2"/>
+  <circle cx="620" cy="490" r="30" fill="#FFB347" opacity="0.2"/>
+</svg>

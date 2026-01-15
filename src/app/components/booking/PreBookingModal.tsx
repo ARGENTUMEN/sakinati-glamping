@@ -148,15 +148,15 @@ export const PreBookingModal = ({ isOpen, onClose, initialDome }: PreBookingModa
                     <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="space-y-3">
                         <div className="flex items-center space-x-2 border border-stone-200 p-4 rounded-none hover:border-[#556B2F] transition-colors cursor-pointer">
                             <RadioGroupItem value="waitlist" id="r1" className="text-[#556B2F]" />
-                            <Label htmlFor="r1" className="cursor-pointer flex-grow font-normal">{t.booking.waitlistOption}</Label>
+                            <Label htmlFor="r1" className="cursor-pointer grow font-normal">{t.booking.waitlistOption}</Label>
                         </div>
                         <div className="flex items-center space-x-2 border border-stone-200 p-4 rounded-none opacity-60 cursor-not-allowed">
                             <RadioGroupItem value="prebook" id="r2" disabled />
-                            <Label htmlFor="r2" className="flex-grow font-normal text-stone-400">{t.booking.prebookOption}</Label>
+                            <Label htmlFor="r2" className="grow font-normal text-stone-400">{t.booking.prebookOption}</Label>
                         </div>
                         <div className="flex items-center space-x-2 border border-stone-200 p-4 rounded-none hover:border-[#556B2F] transition-colors cursor-pointer">
                             <RadioGroupItem value="notify" id="r3" className="text-[#556B2F]" />
-                            <Label htmlFor="r3" className="cursor-pointer flex-grow font-normal">{t.booking.notifyOption}</Label>
+                            <Label htmlFor="r3" className="cursor-pointer grow font-normal">{t.booking.notifyOption}</Label>
                         </div>
                     </RadioGroup>
                 )}

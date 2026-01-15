@@ -1,0 +1,79 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient (sunset/dusk) -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#556B2F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A9A5B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F5022;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#556B2F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- Mountains background -->
+  <path d="M0 600 L480 400 L960 500 L1440 350 L1920 550 L1920 1080 L0 1080 Z" fill="url(#mountainGradient)" opacity="0.3"/>
+  <path d="M0 650 L320 480 L800 580 L1280 450 L1600 600 L1920 520 L1920 1080 L0 1080 Z" fill="url(#mountainGradient)" opacity="0.5"/>
+  
+  <!-- Olive grove ground -->
+  <ellipse cx="960" cy="900" rx="800" ry="120" fill="#8A9A5B" opacity="0.6"/>
+  
+  <!-- Olive trees (simplified) -->
+  <g opacity="0.7">
+    <!-- Tree 1 -->
+    <ellipse cx="400" cy="750" rx="80" ry="100" fill="#6B7A3E"/>
+    <rect x="395" y="750" width="10" height="100" fill="#3F5022"/>
+    
+    <!-- Tree 2 -->
+    <ellipse cx="700" cy="780" rx="90" ry="110" fill="#6B7A3E"/>
+    <rect x="695" y="780" width="10" height="110" fill="#3F5022"/>
+    
+    <!-- Tree 3 -->
+    <ellipse cx="1200" cy="770" rx="85" ry="105" fill="#6B7A3E"/>
+    <rect x="1195" y="770" width="10" height="105" fill="#3F5022"/>
+    
+    <!-- Tree 4 -->
+    <ellipse cx="1500" cy="790" rx="75" ry="95" fill="#6B7A3E"/>
+    <rect x="1495" y="790" width="10" height="95" fill="#3F5022"/>
+  </g>
+  
+  <!-- Geodesic dome (center) -->
+  <g transform="translate(960, 650)">
+    <!-- Dome base -->
+    <ellipse cx="0" cy="80" rx="140" ry="30" fill="#2C2C2C" opacity="0.3"/>
+    
+    <!-- Dome structure -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#E8DCC4" stroke-width="3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#E8DCC4" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#E8DCC4" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Geometric grid pattern -->
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#E8DCC4" stroke-width="2" opacity="0.6"/>
+    <line x1="0" y1="-120" x2="0" y2="120" stroke="#E8DCC4" stroke-width="2" opacity="0.6"/>
+    <line x1="-85" y1="-85" x2="85" y2="85" stroke="#E8DCC4" stroke-width="1.5" opacity="0.5"/>
+    <line x1="85" y1="-85" x2="-85" y2="85" stroke="#E8DCC4" stroke-width="1.5" opacity="0.5"/>
+    
+    <!-- Warm interior glow -->
+    <circle cx="0" cy="0" r="90" fill="#FFB347" opacity="0.2"/>
+    <circle cx="0" cy="0" r="60" fill="#FFA07A" opacity="0.3"/>
+  </g>
+  
+  <!-- Stars -->
+  <circle cx="200" cy="100" r="2" fill="white" opacity="0.8"/>
+  <circle cx="400" cy="150" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="800" cy="80" r="2" fill="white" opacity="0.9"/>
+  <circle cx="1200" cy="120" r="1" fill="white" opacity="0.7"/>
+  <circle cx="1500" cy="90" r="2" fill="white" opacity="0.8"/>
+  <circle cx="1700" cy="140" r="1.5" fill="white" opacity="0.6"/>
+  
+  <!-- Moon -->
+  <circle cx="1750" cy="150" r="50" fill="#E8DCC4" opacity="0.9"/>
+  
+  <!-- Text placeholder area indicator -->
+  <rect x="660" y="300" width="600" height="200" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="10,5" opacity="0.3"/>
+  <text x="960" y="410" text-anchor="middle" fill="#D4AF37" font-size="18" opacity="0.5" font-family="sans-serif">HERO TEXT AREA</text>
+</svg>

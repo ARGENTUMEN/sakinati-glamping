@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import logo from 'figma:asset/324f0d32f00245d51a054efc8768c42314439b59.png';
+import logo from '../../../assets/logo-dark.svg';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
 
 export const Footer = () => {
@@ -13,7 +13,7 @@ export const Footer = () => {
           
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start space-y-6 text-center md:text-left">
-            <img src={logo} alt="Sakinati" className="h-20 invert opacity-90" />
+            <img src={logo} alt="Sakinati" className="h-20 grayscale opacity-90" />
             <p className="font-serif text-xl italic max-w-xs text-stone-400">
               "{t.footer.manifesto}"
             </p>

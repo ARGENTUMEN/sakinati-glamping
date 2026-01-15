@@ -3,7 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
-import logo from 'figma:asset/22f90f6e4e825816bb73f1d119d6cde8320b472d.png';
+import logo from '../../../assets/logo-dark.svg';
 
 interface HeaderProps {
   onOpenBooking: () => void;
@@ -41,7 +41,7 @@ export const Header = ({ onOpenBooking }: HeaderProps) => {
   return (
     <>
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        className={`fixed top-8 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled ? 'bg-stone-50/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
         }`}
         initial={{ y: -100 }}
@@ -51,7 +51,7 @@ export const Header = ({ onOpenBooking }: HeaderProps) => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-             <img src={logo} alt="Sakinati Logo" className="h-12 md:h-16 object-contain" />
+             <img src={logo} alt="Sakinati Logo" className={`h-12 md:h-16 object-contain ${scrolled ? '' : 'grayscale'}`} />
           </div>
 
           {/* Desktop Nav */}
@@ -77,17 +77,17 @@ export const Header = ({ onOpenBooking }: HeaderProps) => {
           <div className="hidden lg:flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-sm">
               <button 
-                onClick={() => setLanguage('es')} 
-                className={`font-medium ${language === 'es' ? 'underline decoration-1 underline-offset-4' : 'opacity-60'} ${scrolled ? 'text-stone-800' : 'text-white'}`}
-              >
-                ES
-              </button>
-              <span className={scrolled ? 'text-stone-400' : 'text-white/40'}>|</span>
-              <button 
                 onClick={() => setLanguage('en')} 
                 className={`font-medium ${language === 'en' ? 'underline decoration-1 underline-offset-4' : 'opacity-60'} ${scrolled ? 'text-stone-800' : 'text-white'}`}
               >
                 EN
+              </button>
+              <span className={scrolled ? 'text-stone-400' : 'text-white/40'}>|</span>
+              <button 
+                onClick={() => setLanguage('es')} 
+                className={`font-medium ${language === 'es' ? 'underline decoration-1 underline-offset-4' : 'opacity-60'} ${scrolled ? 'text-stone-800' : 'text-white'}`}
+              >
+                ES
               </button>
             </div>
             
@@ -141,16 +141,16 @@ export const Header = ({ onOpenBooking }: HeaderProps) => {
 
             <div className="flex items-center space-x-6 pt-8">
               <button 
-                onClick={() => { setLanguage('es'); }} 
-                className={`text-lg ${language === 'es' ? 'font-bold text-stone-900' : 'text-stone-500'}`}
-              >
-                ES
-              </button>
-              <button 
                 onClick={() => { setLanguage('en'); }} 
                 className={`text-lg ${language === 'en' ? 'font-bold text-stone-900' : 'text-stone-500'}`}
               >
                 EN
+              </button>
+              <button 
+                onClick={() => { setLanguage('es'); }} 
+                className={`text-lg ${language === 'es' ? 'font-bold text-stone-900' : 'text-stone-500'}`}
+              >
+                ES
               </button>
             </div>
 

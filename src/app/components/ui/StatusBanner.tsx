@@ -9,7 +9,7 @@ export const StatusBanner = () => {
     <motion.div 
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-stone-900 text-stone-200 text-xs tracking-widest py-2 px-4 text-center font-medium uppercase z-50 relative"
+      className="fixed top-0 inset-x-0 z-50 flex h-8 items-center justify-center bg-stone-900 px-4 text-center text-xs font-medium uppercase tracking-widest text-stone-200"
     >
       <span className="opacity-80">{t.status.text}</span>
     </motion.div>

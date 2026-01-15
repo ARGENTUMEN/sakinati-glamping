@@ -14,6 +14,9 @@ import { BookingChannels } from './components/sections/BookingChannels';
 import { Footer } from './components/layout/Footer';
 import { PreBookingModal } from './components/booking/PreBookingModal';
 import { TimeOfDayOverlay, FloatingLeaves } from './components/effects/Atmosphere';
+import { LoadingScreen } from './components/effects/LoadingScreen';
+import { CustomCursor } from './components/effects/CustomCursor';
+import { GrainTexture } from './components/effects/GrainTexture';
 import { Toaster } from 'sonner';
 
 export default function App() {
@@ -31,7 +34,10 @@ export default function App() {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-[#FDFCF8] font-sans text-stone-900 selection:bg-[#C5A059] selection:text-white relative">
+      <LoadingScreen />
+      <CustomCursor />
+      <GrainTexture />
+      <div className="min-h-screen bg-[#FDFCF8] font-sans text-stone-900 selection:bg-[#D4AF37] selection:text-white relative">
         <StatusBanner />
         <TimeOfDayOverlay />
         <FloatingLeaves />
